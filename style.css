@@ -1,0 +1,158 @@
+body {
+  background-color: lightblue;
+  overflow-x:hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.title {
+  text-align: center;
+}
+
+
+.pop-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 1.5%;
+  transition: transform .5s;
+  transform: scale(1.01); 
+}
+
+
+.main-image {
+  flex-basis: 40%;
+  max-width:45%;
+  max-height:45%;
+  border-radius: 10px;
+}
+
+.main-image-text {
+  padding-left: 20px;
+  width: 75%;
+  height: 200px;
+  padding: 12px 20px;
+  border: 0px;
+  background-color: transparent;
+  font-size: 20px;
+  
+}
+
+.pop-up:hover {
+  transform: scale(1.03);
+}
+
+.gallery { 
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(40, 10%);
+  grid-template-rows: repeat(40, 10%);
+  grid-auto-rows: 500px;
+  grid-auto-columns: 500px;
+  grid-gap: 1%;
+}
+
+.gallery-image {
+  border-radius: 2%;
+}
+
+.gallery-image1 {
+  width: 100%;
+  height: 100%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery-image2 {
+  width: 100%;
+  height: 100%;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 5; 
+}
+
+.gallery-image3 {
+  width: 100%;
+  height: 100%;
+  grid-column-start: 6;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+
+.gallery-image4 {
+  width: 100%;
+  height: 100%;
+  offset-position : auto;
+  grid-column-start: 8;
+  grid-column-end: 10;
+  grid-row-start: 4;
+  grid-row-end: 6;
+} 
+
+.gallery-image5 {
+  width: 100%;
+  height: 100%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.gallery-image6 {
+  width: 100%;
+  height: 100%;
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+
+.gallery-image7 {
+  width: 100%;
+  height: 100%;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+
+
+
+
+
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+  transform: scale(1.01);
+  background-color: red;
+  color: white;
+  text-align: center;
+}
