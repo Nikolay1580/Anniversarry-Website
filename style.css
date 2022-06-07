@@ -1,24 +1,23 @@
+html {height: 100%;}
+
 body {
+  height: 100%;
   background-color: lightblue;
   overflow-x:hidden;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
   
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888; 
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
@@ -63,11 +62,10 @@ body {
 
 .gallery { 
   display: grid;
-  margin: 0 auto;
+  
   grid-template-columns: repeat(40, 10%);
   grid-template-rows: repeat(40, 10%);
-  grid-auto-rows: 500px;
-  grid-auto-columns: 500px;
+  
   grid-gap: 1%;
 }
 
@@ -140,19 +138,92 @@ body {
   grid-row-end: 9;
 }
 
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
 
+.form-container {
+  max-width: 20%;
+  padding: 10px;
+  margin: auto;
+  background-color: white;
+}
 
+.form-container input[type=text], .form-container input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
 
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
 
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
 
 .footer {
-  position: relative;
-  left: 0;
+  position: static;
   bottom: 0;
   width: 100%;
-  height: 400px;
+  min-height: 200px;
+  max-height: 400px;
   transform: scale(1.01);
   background-color: red;
   color: white;
   text-align: center;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(3em);
+  }
+  40% {
+    transform: translate(-3em);
+  }
+  60% {
+    transform: translate(3em);
+  }
+  80% {
+    transform: translate(-3em);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.form-input-animation {
+  animation: shake 1s;
+  color: red;
 }
