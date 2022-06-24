@@ -73,11 +73,33 @@ body {
   grid-gap: 1%;
 }
 
+/* TEST */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.low-opac-image {
+  opacity: 0.2;
+}
+
+/* TEST */
+
 .gallery-image {
   border-radius: 2%;
 }
 
 .gallery-image1 {
+  opacity: 1;
   width: 100%;
   height: 100%;
   grid-column-start: 1;
