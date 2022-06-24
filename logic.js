@@ -1,11 +1,9 @@
 function checkPassword() {
     var name =  document.getElementById("name").value;
     var password =  document.getElementById("password").value;
-    console.log(name.value="");
-    if (name.toLowerCase() == "beta" && password.toLowerCase() == "nik") {
+    if (name.toLowerCase() == "beta" && password.toLowerCase() == "nik") 
         window.open("video.html", '_blank');
-        
-    } else {
+    else {
         document.getElementById("form-container").classList.add("form-input-animation");
         setTimeout(() => {
             document.getElementById("form-container").classList.remove("form-input-animation");
@@ -15,3 +13,21 @@ function checkPassword() {
     password =  document.getElementById("password").value = "";
 }
 
+// Global variables
+low_opacity = "brightness(20%)";
+max_opacity = "brightness(100%)";
+
+function disapeare_image(imageID, textID) {
+    document.getElementById(textID).style.visibility = "visible";
+    document.getElementById(imageID).style.filter = low_opacity;
+}
+
+function apeare_image(imageID, textID) {   
+    setTimeout(() => {
+        document.getElementById(imageID).style.filter = max_opacity;
+        document.getElementById(textID).style.visibility = "hidden";
+    }, 50);
+    
+}
+
+function openSourceCode() {window.open("https://github.com/Nikolay1580/Anniversarry-Website"), "_blank";}
