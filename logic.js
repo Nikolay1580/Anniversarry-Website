@@ -1,1 +1,32 @@
-var _0x25ed29=_0x44ba;(function(_0x185ab1,_0x138d7f){var _0x50238e=_0x44ba,_0x462968=_0x185ab1();while(!![]){try{var _0x256337=parseInt(_0x50238e(0x109))/0x1*(-parseInt(_0x50238e(0xf5))/0x2)+-parseInt(_0x50238e(0x107))/0x3*(-parseInt(_0x50238e(0x113))/0x4)+parseInt(_0x50238e(0x105))/0x5*(-parseInt(_0x50238e(0xfc))/0x6)+-parseInt(_0x50238e(0x103))/0x7+-parseInt(_0x50238e(0xfa))/0x8*(parseInt(_0x50238e(0x112))/0x9)+-parseInt(_0x50238e(0x10b))/0xa+parseInt(_0x50238e(0x10d))/0xb;if(_0x256337===_0x138d7f)break;else _0x462968['push'](_0x462968['shift']());}catch(_0x4f6936){_0x462968['push'](_0x462968['shift']());}}}(_0x334f,0x6187c));function checkPassword(){var _0x3f82e0=_0x44ba,_0x2fc3e4=document['getElementById'](_0x3f82e0(0xf9))['value'],_0x5aa9c2=document[_0x3f82e0(0x111)](_0x3f82e0(0xfd))['value'];if(_0x2fc3e4['toLowerCase']()==_0x3f82e0(0xf6)&&_0x5aa9c2[_0x3f82e0(0x10e)]()==_0x3f82e0(0x10f))window[_0x3f82e0(0xfb)](_0x3f82e0(0x108),'_blank');else document['getElementById'](_0x3f82e0(0x110))['classList'][_0x3f82e0(0x106)](_0x3f82e0(0xf7)),setTimeout(()=>{var _0x56d84c=_0x3f82e0;document[_0x56d84c(0x111)]('form-container')[_0x56d84c(0x10a)][_0x56d84c(0xff)](_0x56d84c(0xf7));},0x3e8);document[_0x3f82e0(0x111)](_0x3f82e0(0xf9))[_0x3f82e0(0x100)]='',_0x5aa9c2=document[_0x3f82e0(0x111)](_0x3f82e0(0xfd))[_0x3f82e0(0x100)]='';}low_opacity='brightness(20%)',max_opacity=_0x25ed29(0x102);function _0x44ba(_0xcf2a54,_0xc883e2){var _0x334f08=_0x334f();return _0x44ba=function(_0x44ba62,_0x3919f3){_0x44ba62=_0x44ba62-0xf4;var _0x10701c=_0x334f08[_0x44ba62];return _0x10701c;},_0x44ba(_0xcf2a54,_0xc883e2);}function disapeare_image(_0xe3f5c,_0x807b23){var _0x250725=_0x25ed29;document[_0x250725(0x111)](_0x807b23)[_0x250725(0xf4)][_0x250725(0x10c)]=_0x250725(0x104),document[_0x250725(0x111)](_0xe3f5c)[_0x250725(0xf4)][_0x250725(0xf8)]=low_opacity;}function _0x334f(){var _0x502818=['2zrDgpf','classList','7501920ZnkPsI','visibility','23821369uSbouc','toLowerCase','july\x2019','form-container','getElementById','1521kMiOfa','1427008glCxcK','style','589718TGnjdc','beta','form-input-animation','filter','name','6568hQASeD','open','3376434PFQJWQ','password','https://github.com/Nikolay1580/Anniversarry-Website','remove','value','_blank','brightness(100%)','570143INFQbJ','visible','5WGtAxF','add','3ZinVXH','video.html'];_0x334f=function(){return _0x502818;};return _0x334f();}function apeare_image(_0x4b02f4,_0x2756cb){setTimeout(()=>{var _0x46831f=_0x44ba;document[_0x46831f(0x111)](_0x4b02f4)['style'][_0x46831f(0xf8)]=max_opacity,document[_0x46831f(0x111)](_0x2756cb)['style']['visibility']='hidden';},0x32);}function openSourceCode(){var _0x3dcc8a=_0x25ed29;window[_0x3dcc8a(0xfb)](_0x3dcc8a(0xfe)),_0x3dcc8a(0x101);}
+function checkPassword() {
+    var name =  document.getElementById("name").value;
+    var password =  document.getElementById("password").value;
+    if (name.toLowerCase() == "beta" && password.toLowerCase() == "july 19") 
+        window.open("video.html", '_blank');
+    else {
+        document.getElementById("form-container").classList.add("form-input-animation");
+        setTimeout(() => {
+            document.getElementById("form-container").classList.remove("form-input-animation");
+        }, 1000);
+    }
+    document.getElementById("name").value = "";
+    password =  document.getElementById("password").value = "";
+}
+
+low_opacity = "brightness(20%)";
+max_opacity = "brightness(100%)";
+
+function disapeare_image(imageID, textID) {
+    document.getElementById(textID).style.visibility = "visible";
+    document.getElementById(imageID).style.filter = low_opacity;
+}
+
+function apeare_image(imageID, textID) {   
+    setTimeout(() => {
+        document.getElementById(imageID).style.filter = max_opacity;
+        document.getElementById(textID).style.visibility = "hidden";
+    }, 50);
+    
+}
+
+function openSourceCode() {window.open("https://github.com/Nikolay1580/Anniversarry-Website"), "_blank";}
