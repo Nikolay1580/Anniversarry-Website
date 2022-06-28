@@ -22,12 +22,6 @@ body {
   background: #555; 
 }
 
-.html-image {
-  position: relative;
-  height: 3%;
-  width: 3%;
-}
-
 .title {
   position: relative;
   text-align: center;
@@ -69,11 +63,11 @@ body {
 .gallery { 
   display: grid;
   grid-template-columns: repeat(10, 9.5%);
-  grid-template-rows: repeat(40, 10%);
+  grid-template-rows: repeat(10, 11%);
   grid-gap: 1%;
 }
 
-/* TEST */
+
 .container {
   position: relative;
   text-align: center;
@@ -87,12 +81,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.low-opac-image {
-  opacity: 0.2;
-}
-
-/* TEST */
 
 .gallery-image {
   border-radius: 2%;
@@ -223,6 +211,7 @@ body {
 }
 
 .form-container {
+  border-radius: 2%;
   max-width: 20%;
   padding: 10px;
   margin: auto;
@@ -260,17 +249,7 @@ body {
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
-.footer {
-  position: static;
-  bottom: 0;
-  width: 100%;
-  min-height: 200px;
-  max-height: 400px;
-  transform: scale(1.01);
-  background-color: red;
-  color: white;
-  text-align: center;
-}
+
 
 .source-code-container {
   position: absolute;
@@ -312,4 +291,10 @@ body {
 
 .image-opacity {
   opacity: 0.2;
+}
+
+.html-image {
+  position: relative;
+  height: 3%;
+  width: 3%;
 }
