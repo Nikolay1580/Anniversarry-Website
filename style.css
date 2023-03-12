@@ -27,6 +27,23 @@ body {
   text-align: center;
 }
 
+.year-2-dir {
+  position: absolute;
+	top: 20px;
+  color: #97406A;
+	right: 30px;
+  width: 100px
+}
+
+.year-2-img {
+  color: orange;
+  position: absolute;
+  right: 30px;
+  height: 100%;
+  width: 20%;
+  filter: grayscale(100%) hue-rotate(315deg) saturate(3);
+}
+
 .pop-up {
   display: flex;
   align-items: center;
